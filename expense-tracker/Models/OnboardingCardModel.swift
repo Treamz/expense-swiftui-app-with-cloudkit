@@ -27,6 +27,12 @@ let onboardingCardsList: [OnboardingCardModel] = [
       gradientColors: [Color(.purple), Color(.pink)]
     ),
     OnboardingCardModel(
+      title: "Cloud Sync",
+      headline: "Sync your data with CloudKit for seamless access across all your devices. Ensure your financial information is up-to-date and backed up securely in the cloud.",
+      image: "sync",
+      gradientColors: [Color(.orange), Color(.pink)]
+    ),
+    OnboardingCardModel(
       title: "See Where Your Money Goes",
       headline: "Visualize your spending habits with beautiful charts and graphs. Understand where your money goes each month, and identify opportunities to save more.",
       image: "go",
