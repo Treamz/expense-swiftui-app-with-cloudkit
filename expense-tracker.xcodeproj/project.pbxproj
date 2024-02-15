@@ -38,6 +38,9 @@
 		22A1C2882B7BBF8400606358 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C2872B7BBF8400606358 /* OnboardingCardView.swift */; };
 		22A1C28A2B7BBFB600606358 /* OnboardingCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C2892B7BBFB600606358 /* OnboardingCardModel.swift */; };
 		22A1C28C2B7BC05F00606358 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C28B2B7BC05F00606358 /* StartButtonView.swift */; };
+		22A1C28F2B7BCDED00606358 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C28E2B7BCDED00606358 /* WebContentView.swift */; };
+		22A1C2912B7BD23200606358 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C2902B7BD23200606358 /* PrivacyPolicyView.swift */; };
+		22A1C2932B7E596A00606358 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C2922B7E596A00606358 /* TermsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +78,9 @@
 		22A1C2872B7BBF8400606358 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
 		22A1C2892B7BBFB600606358 /* OnboardingCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardModel.swift; sourceTree = "<group>"; };
 		22A1C28B2B7BC05F00606358 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		22A1C28E2B7BCDED00606358 /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
+		22A1C2902B7BD23200606358 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		22A1C2922B7E596A00606358 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 		22A1C2522B7BA09200606358 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				22A1C28D2B7BCDD700606358 /* Settings */,
 				22A1C2842B7BBF1900606358 /* Onboarding */,
 				22A1C2532B7BA09200606358 /* Dashboard */,
 				22A1C2562B7BA09200606358 /* Logs */,
@@ -156,7 +163,6 @@
 			children = (
 				22A1C2542B7BA09200606358 /* DashboardTabView.swift */,
 				22A1C2552B7BA09200606358 /* CategoryRowView.swift */,
-				22A1C2822B7BA5C300606358 /* SettingsView.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -214,6 +220,17 @@
 				22A1C2872B7BBF8400606358 /* OnboardingCardView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		22A1C28D2B7BCDD700606358 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				22A1C2822B7BA5C300606358 /* SettingsView.swift */,
+				22A1C28E2B7BCDED00606358 /* WebContentView.swift */,
+				22A1C2922B7E596A00606358 /* TermsView.swift */,
+				22A1C2902B7BD23200606358 /* PrivacyPolicyView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +316,10 @@
 				22A1C2692B7BA09200606358 /* LogsTabView.swift in Sources */,
 				22A1C26F2B7BA09200606358 /* PieChartView.swift in Sources */,
 				22A1C2862B7BBF2D00606358 /* OnboardingView.swift in Sources */,
+				22A1C28F2B7BCDED00606358 /* WebContentView.swift in Sources */,
 				22A1C27A2B7BA0D300606358 /* Sort.swift in Sources */,
 				22A1C28A2B7BBFB600606358 /* OnboardingCardModel.swift in Sources */,
+				22A1C2932B7E596A00606358 /* TermsView.swift in Sources */,
 				22A1C2192B7B9FD100606358 /* ExpenseTracker.xcdatamodeld in Sources */,
 				22A1C26C2B7BA09200606358 /* PieChartRow.swift in Sources */,
 				22A1C2652B7BA09200606358 /* DashboardTabView.swift in Sources */,
@@ -310,6 +329,7 @@
 				22A1C2792B7BA0D300606358 /* CoreDataStack.swift in Sources */,
 				22A1C2672B7BA09200606358 /* LogListView.swift in Sources */,
 				22A1C2082B7B9F7D00606358 /* expense_trackerApp.swift in Sources */,
+				22A1C2912B7BD23200606358 /* PrivacyPolicyView.swift in Sources */,
 				22A1C2702B7BA09200606358 /* SearchBar.swift in Sources */,
 				22A1C2502B7BA07F00606358 /* Extensions.swift in Sources */,
 				22A1C27B2B7BA0D300606358 /* Category.swift in Sources */,
@@ -449,6 +469,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "expense-tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quantix AI";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -488,6 +509,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "expense-tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quantix AI";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

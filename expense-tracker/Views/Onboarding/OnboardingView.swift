@@ -27,7 +27,7 @@ struct OnBoardingView: View {
     
 //      .animation(.easeInOut)
       .transition(.slide)
-      .tabViewStyle(PageTabViewStyle())
+      .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
       .padding(.vertical, 20)
     }
 

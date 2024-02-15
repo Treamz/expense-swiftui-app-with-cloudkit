@@ -24,7 +24,7 @@ struct OnboardingCardView: View {
                   .resizable()
                   .scaledToFit()
                   .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
-                  .scaleEffect(isAnimating ? 1.0 : 0.6)
+                  .scaleEffect(isAnimating ? 0.9 : 0.6)
                 
                 // FRUIT: TITLE
                 Text(onboardingCards.title)
@@ -59,5 +59,5 @@ struct OnboardingCardView: View {
 }
 
 #Preview {
-    OnboardingCardView(onboardingCards: onboardingCardsList[0],index: 0,tabSelection: .constant(0))
+    OnboardingCardView(onboardingCards: onboardingCardsList[3],index: 0,tabSelection: .constant(0))
 }
