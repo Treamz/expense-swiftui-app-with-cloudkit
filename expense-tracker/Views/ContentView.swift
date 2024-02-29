@@ -33,6 +33,14 @@ struct ContentView: View {
                         }
                 }
                 .tag(1)
+                NotesView()
+                    .tabItem {
+                        VStack {
+                            Text("Notes")
+                            Image(systemName: "note")
+                        }
+                }
+                .tag(2)
                 SettingsView()
                     .tabItem {
                         VStack {
@@ -40,7 +48,7 @@ struct ContentView: View {
                             Image(systemName: "gear")
                         }
                 }
-                .tag(2)
+                .tag(3)
             }
         }
     }
