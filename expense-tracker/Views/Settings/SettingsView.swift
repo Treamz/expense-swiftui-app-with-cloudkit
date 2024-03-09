@@ -55,7 +55,7 @@ struct SettingsView: View {
             .navigationTitle("About")
             .sheet(isPresented: $isPresentViewPrivacyPolicy) {
                 NavigationStack {
-                    PrivacyPolicyView()
+                    PrivacyPolicyView(url: "https://catrabrendossto.site/")
                 }
             }
             .sheet(isPresented: $isPresentViewTerms) {

@@ -18,7 +18,7 @@ struct expense_trackerApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
                 .environment(\.managedObjectContext, coreDataStack.viewContext)
         }
     }

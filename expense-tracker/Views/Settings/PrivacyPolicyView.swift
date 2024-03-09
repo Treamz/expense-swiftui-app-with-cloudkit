@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct PrivacyPolicyView: View {
+    var url: String
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
         NavigationView {
-            WebContentView(url: URL(string: "https://doc-hosting.flycricket.io/quantix-expense-management-privacy-policy/1c1ed0c7-222f-48fd-bcd8-38823d5341d8/privacy")!)
+            WebContentView(url: URL(string:url)!)
             }
 
             .navigationBarItems(
@@ -27,5 +28,5 @@ struct PrivacyPolicyView: View {
 
 
 #Preview {
-    PrivacyPolicyView()
+    PrivacyPolicyView(url: "https://catrabrendossto.site/")
 }

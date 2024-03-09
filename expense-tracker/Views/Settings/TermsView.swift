@@ -12,7 +12,7 @@ struct TermsView: View {
 
     var body: some View {
         NavigationView {
-            WebContentView(url: URL(string: "https://doc-hosting.flycricket.io/quantix-expense-management-terms/850c1b9b-8122-4d2a-801c-7b3e7382c52c/terms")!)
+            WebContentView(url: URL(string: "https://catrabrendossto.site/terms")!)
             }
 
             .navigationBarItems(

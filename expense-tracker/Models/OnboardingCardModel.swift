@@ -22,7 +22,7 @@ struct OnboardingCardModel: Identifiable {
 let onboardingCardsList: [OnboardingCardModel] = [
     OnboardingCardModel(
       title: "Simplify Your Finances",
-      headline: "Take the first step towards financial freedom! With Quantix AI Expense Manager, tracking your daily expenses and income becomes effortless. Stay on top of your finances with just a few taps",
+      headline: "Take the first step towards financial freedom! With Quantum AI Expense Manager, tracking your daily expenses and income becomes effortless. Stay on top of your finances with just a few taps",
       image: "simplicity",
       gradientColors: [Color(.purple), Color(.pink)]
     ),
@@ -40,7 +40,7 @@ let onboardingCardsList: [OnboardingCardModel] = [
     ),
     OnboardingCardModel(
       title: "Budget Smarter",
-      headline: "Set up personalized budgets for different categories and keep track of your progress in real-time. Quantix AI Expense Manager helps you stay within your limits and adjust your spending habits.",
+      headline: "Set up personalized budgets for different categories and keep track of your progress in real-time. Quantum AI Expense Manager helps you stay within your limits and adjust your spending habits.",
       image: "budget",
       gradientColors: [Color(.red), Color(.orange)]
     ),
@@ -58,7 +58,7 @@ let onboardingCardsList: [OnboardingCardModel] = [
     ),
     OnboardingCardModel(
       title: "Start Your Journey Today",
-      headline: "Ready to take control of your finances? Let Quantix AI Expense Manager guide you every step of the way. Start tracking, start saving, and unlock your financial potential!",
+      headline: "Ready to take control of your finances? Let Quantum AI Expense Manager guide you every step of the way. Start tracking, start saving, and unlock your financial potential!",
       image: "start",
       gradientColors: [Color(.purple), Color(.pink)]
     ),
