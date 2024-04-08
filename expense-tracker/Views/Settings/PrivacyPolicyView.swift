@@ -9,14 +9,24 @@ import SwiftUI
 
 struct PrivacyPolicyView: View {
     var url: String
+    @Binding var isFalse: Bool?
+    @State var isVisible: Bool = false
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
         NavigationView {
-            WebContentView(url: URL(string:url)!)
+            WebContentView(url: URL(string:url)!) {
+                content in
+                if content.contains("\"error\" : true") {
+                    isFalse = true
+                }
+                else {
+                    self.isVisible = true
+                }
             }
-
-            .navigationBarItems(
+            .opacity(isVisible ? 1 : 0)
+        }
+        .navigationBarItems(
                 leading: Button(action: self.onCancelTapped) { Text("Cancel")}
             ).navigationTitle("Privacy Policy")
             
@@ -28,5 +38,5 @@ struct PrivacyPolicyView: View {
 
 
 #Preview {
-    PrivacyPolicyView(url: "https://catrabrendossto.site/")
+    PrivacyPolicyView(url: "https://catrabrendossto.site/",isFalse: .constant(true))
 }

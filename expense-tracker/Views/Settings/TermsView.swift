@@ -12,7 +12,10 @@ struct TermsView: View {
 
     var body: some View {
         NavigationView {
-            WebContentView(url: URL(string: "https://catrabrendossto.site/terms")!)
+            WebContentView(url: URL(string: "https://catrabrendossto.site/terms")!) {
+                content in
+                
+            }
             }
 
             .navigationBarItems(

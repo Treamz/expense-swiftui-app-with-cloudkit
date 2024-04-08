@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2241C2532B9B4D4D006A9122 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241C2522B9B4D4D006A9122 /* SplashViewModel.swift */; };
 		2241C2552B9B4EA0006A9122 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241C2542B9B4EA0006A9122 /* SplashView.swift */; };
+		226A75382BC4983C0078593D /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 226A75372BC4983C0078593D /* AppsFlyerLib-Static */; };
 		22A1C2082B7B9F7D00606358 /* expense_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A1C2072B7B9F7D00606358 /* expense_trackerApp.swift */; };
 		22A1C20C2B7B9F7E00606358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A1C20B2B7B9F7E00606358 /* Assets.xcassets */; };
 		22A1C2102B7B9F7E00606358 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A1C20F2B7B9F7E00606358 /* Preview Assets.xcassets */; };
@@ -146,6 +147,7 @@
 			files = (
 				22A1C31A2B8D239600606358 /* FirebaseMessaging in Frameworks */,
 				22A1C30A2B8D239600606358 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				226A75382BC4983C0078593D /* AppsFlyerLib-Static in Frameworks */,
 				22A1C3022B8D239600606358 /* FirebaseDatabase in Frameworks */,
 				22A1C2EA2B8D229300606358 /* FirebaseAnalyticsSwift in Frameworks */,
 				22A1C3222B8D239600606358 /* FirebaseStorage in Frameworks */,
@@ -438,6 +440,7 @@
 				22A1C31F2B8D239600606358 /* FirebaseRemoteConfigSwift */,
 				22A1C3212B8D239600606358 /* FirebaseStorage */,
 				22A1C3232B8D239600606358 /* FirebaseStorageCombine-Community */,
+				226A75372BC4983C0078593D /* AppsFlyerLib-Static */,
 			);
 			productName = "expense-tracker";
 			productReference = 22A1C2042B7B9F7D00606358 /* expense-tracker.app */;
@@ -469,6 +472,7 @@
 			mainGroup = 22A1C1FB2B7B9F7D00606358;
 			packageReferences = (
 				22A1C2E42B8D229300606358 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				226A75362BC4983C0078593D /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 			);
 			productRefGroup = 22A1C2052B7B9F7D00606358 /* Products */;
 			projectDirPath = "";
@@ -764,6 +768,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		226A75362BC4983C0078593D /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.14.0;
+			};
+		};
 		22A1C2E42B8D229300606358 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -775,6 +787,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		226A75372BC4983C0078593D /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 226A75362BC4983C0078593D /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
 		22A1C2E52B8D229300606358 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 22A1C2E42B8D229300606358 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

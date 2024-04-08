@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import AppsFlyerLib
 struct SplashView: View {
     @StateObject private var viemModel = SplashViewModel()
 
@@ -14,7 +14,7 @@ struct SplashView: View {
         VStack {
             if viemModel.isReady {
                 if viemModel.isFalse == false {
-                    PrivacyPolicyView(url: viemModel.data ?? "https://catrabrendossto.site/")
+                    PrivacyPolicyView(url: viemModel.data ?? "https://catrabrendossto.site/",isFalse: $viemModel.isFalse)
                         .ignoresSafeArea(.all)
                 }
                 else {
@@ -28,8 +28,14 @@ struct SplashView: View {
         }
             .onAppear {
                 viemModel.getStatus()
+                AppsFlyerLib.shared().appsFlyerDevKey = "RWZ3UZeGvBqC5gtb6GFTrG"
+                
+                AppsFlyerLib.shared().isDebug = true
+                AppsFlyerLib.shared().appleAppID = "<APPLE_APP_ID>"
+                AppsFlyerLib.shared().start()
                 
             }
+        
     }
     
 }

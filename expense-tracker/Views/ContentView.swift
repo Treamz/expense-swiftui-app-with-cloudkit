@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import AppsFlyerLib
 struct ContentView: View {
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
 
